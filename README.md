@@ -67,8 +67,32 @@ pip install -r requirements.txt
     ```
      python app.py
     ```
+Abre tu navegador y visita: http://127.0.0.1:5000 
+
+## 🌐 Uso
+
+Abre la página principal.
+
+Selecciona filtros: Institución, Área de estudio, Modalidad, Régimen y Carrera.
+
+Presiona Buscar para ver resultados.
+
+Haz clic en una fila para usar la calculadora de aranceles.
+
+Selecciona beca y/o ingresa crédito para calcular el costo estimado.
+
+## 📝 Requisitos
+
+Python 3.8 o superior
+
+Flask
+
+Google Cloud SDK y credenciales de BigQuery
+
+Dependencias listadas en requirements.txt
    
     
+
 
 
 
