@@ -26,14 +26,14 @@ Aplicación Web que desarrollé en conjunto con mi equipo como proyecto de Titul
 
 Sigue estos pasos para ejecutar **Scrappyer** en tu computadora:
 
-1. **Clonar el repositorio**  
+1. **Clonar el repositorio**
    Abre la terminal o PowerShell y ejecuta:  
    ```bash
    git clone https://github.com/catalinacatalandev/Scrappyer-Buscador-Carreras.git
    cd Scrappyer-Buscador-Carreras
 
-2. **Crear y activar un entorno virtual** 
-Esto ayuda a mantener las dependencias del proyecto aisladas:
+3. **Crear y activar un entorno virtual** 
+    Esto ayuda a mantener las dependencias del proyecto aisladas:
 
 - En Windows PowerShell:
 ```
@@ -41,9 +41,15 @@ python -m venv venv
 .\venv\Scripts\activate
 
 - En Linux/macOS:
- ``` 
+```
 python3 -m venv venv
 source venv/bin/activate
+
+3. **Instalar dependencias**
+   Con el entorno virtual activado, instala las dependencias necesarias:
+   ```
+   pip install -r requirements.txt
+
 
 
 
