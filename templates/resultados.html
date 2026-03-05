@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U-Connect</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header>
+    <a href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='img/icons8-volver-40.png') }}" alt="Icono" class="header-icon">
+    </a>
+    <img src="{{ url_for('static', filename='img/img-header.png') }}" alt="Imagen de Header" class="header-img">
+  </header>
+
+  <main>
+    <!-- Aquí va toda la sección de resultados y calculadora -->
+
+    <section class="results-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Institución</th>
+            <th>Carrera</th>
+            <th>Sede</th>
+            <th>Modalidad</th>
+            <th>Régimen</th>
+            <th>Duración</th>
+            <th>Arancel</th>
+            <th>Arancel de referencia</th>
+            <th>Matrícula</th>
+          </tr>
+        </thead>
+      </table>
+      <div class="scrollable-table">
+        <table>
+          <tbody id="tabla-resultados">
+            <!-- Aquí se llenan los resultados desde JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div id="contenedor-calculadora-info">
+      <!-- Calculadora -->
+      <section id="calculadora" class="search-container">
+        <h2>SIMULA EL COSTO DE TU CARRERA IDEAL</h2>
+        <form id="calculator-form">
+          <div class="select-group">
+            <label for="carrera">Carrera:</label>
+            <input type="text" id="carrera" placeholder="Nombre de la Carrera" readonly>
+          </div>
+          <div class="select-group">
+            <label for="arancel">Arancel Anual (CLP):</label>
+            <input type="text" id="arancel" placeholder="$1.345.567" readonly>
+          </div>
+          <div class="select-group">
+            <label for="beca">Selecciona una beca:</label>
+            <select id="beca" required>
+              <option value="" selected>Elige una beca</option>
+              <option value="full">Beca Bicentenario (Cubre Arancel)</option>
+              <option value="860000">Beca Nuevo Milenio: $860.000</option>
+              <option value="1150000">Beca Juan Gómez Millas: $1.150.000</option>
+              <option value="full">Beca Vocación de Profesor/a (Cubre Arancel)</option>
+              <option value="1150000">Beca Excelencia Académica: $1.150.000</option>
+              <option value="900000">Beca Excelencia Técnica: $900.000</option>
+              <option value="1150000">Beca Distinción a las Trayectorias Educativas: $1.150.000</option>
+              <option value="500000">Beca para Hijas e Hijos de Profesionales de la Educación: $500.000</option>
+              <option value="750000">Beca de Articulación: $750.000</option>
+            </select>
+          </div>
+          <div class="select-group">
+            <label for="credito">Monto del crédito (CLP):</label>
+            <input type="text" id="credito" placeholder="$1.456.789" inputmode="numeric">
+          </div>
+          <button type="button" class="btn-primary" id="calcular">Calcular</button>
+          <button type="button" class="btn-primary" id="limpiar-calculadora">Limpiar</button>
+        </form>
+        <div class="result-calculadora">
+          <p id="resultado">Seleccione una fila de la tabla para comenzar.</p>
+        </div>
+      </section>
+
+      <!-- Información adicional -->
+      <section id="info-container">
+        <h3>INFORMACIÓN ADICIONAL</h3>
+        <h4>¿Qué es el Arancel de Referencia?</h4>
+        <p>El arancel de referencia en las universidades chilenas es un valor definido por el Ministerio de Educación (Mineduc) 
+        que establece un monto máximo reconocido por el Estado para financiar una carrera mediante becas y créditos,
+        como el Crédito con Aval del Estado (CAE) u otros beneficios estudiantiles.</p>
+        <h4>Sobre el crédito</h4>
+        <p>Recuerda que el crédito excluye los intereses ya que cada entidad bancaria cuenta con sus propios intereses.</p>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- JS -->
+  <script>
+      const API_URL = "{{ url_for('get_data') }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/resultados.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/calculadora.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca tu carrera con Scrappyer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header>
+    <a href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='img/icons8-barra-de-búsqueda-50.png') }}" alt="Icono" class="header-icon">
+    </a>
+    <img src="{{ url_for('static', filename='img/header blue.png') }}" alt="Imagen de Header" class="header-img">
+  </header>
+  
+  <main>
+    <section class="search-container">
+      <form id="search-form" action="{{ url_for('resultados') }}" method="GET">
+        <div class="select-group">
+          <select name="institucion" id="institucion">
+            <option value="" disabled selected>Institución</option>
+          </select>
+          <select name="areaDeEducacion" id="area-de-estudio">
+            <option value="" disabled selected>Área de Estudio</option>
+          </select>
+          <select name="modalidad" id="modalidad">
+            <option value="" disabled selected>Modalidad</option>
+          </select>
+          <select name="regimen" id="regimen">
+            <option value="" disabled selected>Régimen</option>
+          </select>
+          <select name="carrera" id="carrera">
+            <option value="" disabled selected>Carrera</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary">Buscar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script>
+      const API_URL = "{{ url_for('get_data') }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+<footer></footer> 
+</html>
