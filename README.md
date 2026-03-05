@@ -91,6 +91,7 @@ Google Cloud SDK y credenciales de BigQuery
 
 Dependencias listadas en requirements.txt
 ## 📂 Estructura del proyecto 
+```
 Scrappyer-Buscador-Carreras/
 ├─ app.py
 ├─ requirements.txt
@@ -111,10 +112,12 @@ Scrappyer-Buscador-Carreras/
 │     ├─ icons8-volver-40.png
 │     └─ img-header.png
 └─ .gitignore
+```
 
 
 
     
+
 
 
 
