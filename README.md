@@ -39,7 +39,8 @@ Esto ayuda a mantener las dependencias del proyecto aisladas:
 
 python -m venv venv
 .\venv\Scripts\activate    # Windows PowerShell
-# o en Linux/macOS
-# source venv/bin/activate
+#o en Linux/macOS
+#source venv/bin/activate
+
 
 
