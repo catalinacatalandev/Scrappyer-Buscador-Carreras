@@ -3,17 +3,18 @@ Aplicación Web que desarrollé en conjunto con mi equipo como proyecto de Titul
 **Scrappyer** es una aplicación web diseñada para que los estudiantes chilenos puedan **buscar carreras universitarias** de manera rápida y filtrada según sus preferencias. Además, cuenta con una **calculadora de aranceles** para simular el costo de la carrera según becas y créditos disponibles.
 
 ## 🚀 Funcionalidades
-
-- 🔹 Búsqueda dinámica de carreras filtrando por:
-  - Institución
-  - Área de estudio
-  - Modalidad (presencial, online, híbrida)
-  - Régimen (diurno, vespertino)
-  - Nombre de la carrera
-- 🔹 Calculadora de aranceles:
-  - Simula el costo anual y total según beca y crédito.
-- 🔹 Resultados mostrados en tabla con scroll y selección de fila.
-- 🔹 Interfaz responsiva, pensada para escritorio y móviles.
+- 🔍 **Búsqueda de carreras** filtrando por:
+  - 🏫 Institución
+  - 🎓 Área de estudio
+  - 💻 Modalidad (presencial, online, híbrida)
+  - 🕒 Régimen (diurno, vespertino)
+  - 📘 Nombre de la carrera
+- 💰 **Calculadora de aranceles**:
+  - Simula el costo anual y total según beca y crédito
+- 📊 **Resultados en tabla**:
+  - Scrollable y selección de fila
+- 📱 **Interfaz responsiva**:
+  - Optimizada para escritorio y móviles
 
 ## 🛠 Tecnologías usadas
 
@@ -117,6 +118,7 @@ Scrappyer-Buscador-Carreras/
 
 
     
+
 
 
 
