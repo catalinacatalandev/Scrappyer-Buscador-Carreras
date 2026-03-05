@@ -36,14 +36,15 @@ Sigue estos pasos para ejecutar **Scrappyer** en tu computadora:
 Esto ayuda a mantener las dependencias del proyecto aisladas:
 
 - En Windows PowerShell:
-´´´
+```
 python -m venv venv
 .\venv\Scripts\activate
 
 - En Linux/macOS:
-´´´
+ ``` 
 python3 -m venv venv
 source venv/bin/activate
+
 
 
 
