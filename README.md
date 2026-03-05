@@ -32,7 +32,7 @@ Sigue estos pasos para ejecutar **Scrappyer** en tu computadora:
    git clone https://github.com/catalinacatalandev/Scrappyer-Buscador-Carreras.git
    cd Scrappyer-Buscador-Carreras
 
-3. **Crear y activar un entorno virtual** 
+2. **Crear y activar un entorno virtual** 
     Esto ayuda a mantener las dependencias del proyecto aisladas:
 
 - En Windows PowerShell:
@@ -47,8 +47,11 @@ source venv/bin/activate
 
 3. **Instalar dependencias**
    Con el entorno virtual activado, instala las dependencias necesarias:
-   ```
-   pip install -r requirements.txt
+```
+pip install -r requirements.txt
+
+hola hola
+
 
 
 
