@@ -39,20 +39,38 @@ Sigue estos pasos para ejecutar **Scrappyer** en tu computadora:
 ```
 python -m venv venv
 .\venv\Scripts\activate
-
+```
 - En Linux/macOS:
 ```
 python3 -m venv venv
 source venv/bin/activate
-´´´
+```
 
 3. **Instalar dependencias**
    Con el entorno virtual activado, instala las dependencias necesarias:
 ```
 pip install -r requirements.txt
-´´´
+```
 
-fbghbg b
+4. **Configurar credenciales de Google Cloud**
+   1. Guarda tu archivo de credenciales JSON (por ejemplo redprueba2.json) en la carpeta del proyecto.
+   2. Exporta la variable de entorno:
+  - Windows PowerShell:
+    ```
+    $env:GOOGLE_APPLICATION_CREDENTIALS="C:\ruta\a\redprueba2.json"
+    ```
+    - Linux/macOS:
+      ```
+      export GOOGLE_APPLICATION_CREDENTIALS="/ruta/a/redprueba2.json"
+    ```
+5. **Ejecutar la aplicación**
+    ```
+     python app.py
+    ```
+   
+    
+
+
 
 
 
