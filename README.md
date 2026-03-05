@@ -40,6 +40,18 @@ python -m venv venv
 #o en Linux/macOS
 #source venv/bin/activate
 
+3. **Instalar dependencias** 
+Con el entorno virtual activado, instala los paquetes necesarios:  
+```bash
+pip install -r requirements.txt
+
+4. **Configurar credenciales de Google Cloud**
+La aplicación usa BigQuery, así que necesitas un archivo JSON con las credenciales:
+```bash
+set GOOGLE_APPLICATION_CREDENTIALS="ruta/a/redprueba2-1e1d743e5058.json"
+# en Linux/macOS sería:
+# export GOOGLE_APPLICATION_CREDENTIALS="ruta/a/redprueba2-1e1d743e5058.json"
+
 
 
 
