@@ -32,15 +32,14 @@ Sigue estos pasos para ejecutar **Scrappyer** en tu computadora:
    git clone https://github.com/catalinacatalandev/Scrappyer-Buscador-Carreras.git
    cd Scrappyer-Buscador-Carreras
 
-   Sigue estos pasos para ejecutar **Scrappyer** en tu computadora:
-
 2. **Crear y activar un entorno virtual**
 Esto ayuda a mantener las dependencias del proyecto aisladas:
-
+``` bash
 python -m venv venv
 .\venv\Scripts\activate    # Windows PowerShell
 #o en Linux/macOS
 #source venv/bin/activate
+
 
 
 
