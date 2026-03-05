@@ -59,9 +59,9 @@ pip install -r requirements.txt
     ```
     $env:GOOGLE_APPLICATION_CREDENTIALS="C:\ruta\a\redprueba2.json"
     ```
-    - Linux/macOS:
+  - Linux/macOS:
       ```
-      export GOOGLE_APPLICATION_CREDENTIALS="/ruta/a/redprueba2.json"
+    export GOOGLE_APPLICATION_CREDENTIALS="/ruta/a/redprueba2.json"
     ```
 5. **Ejecutar la aplicación**
     ```
@@ -90,8 +90,32 @@ Flask
 Google Cloud SDK y credenciales de BigQuery
 
 Dependencias listadas en requirements.txt
-   
+## 📂 Estructura del proyecto 
+Scrappyer-Buscador-Carreras/
+├─ app.py
+├─ requirements.txt
+├─ README.md
+├─ templates/
+│  ├─ index.html
+│  └─ resultados.html
+├─ static/
+│  ├─ css/
+│  │  └─ styles.css
+│  ├─ js/
+│  │  ├─ index.js
+│  │  ├─ resultados.js
+│  │  └─ calculadora.js
+│  └─ img/
+│     ├─ header blue.png
+│     ├─ icons8-barra-de-búsqueda-50.png
+│     ├─ icons8-volver-40.png
+│     └─ img-header.png
+└─ .gitignore
+
+
+
     
+
 
 
 
