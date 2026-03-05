@@ -44,13 +44,15 @@ python -m venv venv
 ```
 python3 -m venv venv
 source venv/bin/activate
+´´´
 
 3. **Instalar dependencias**
    Con el entorno virtual activado, instala las dependencias necesarias:
 ```
 pip install -r requirements.txt
+´´´
 
-hola hola
+fbghbg b
 
 
 
